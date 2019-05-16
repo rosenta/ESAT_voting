@@ -1,0 +1,267 @@
+body {
+    background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/06/36/6856299993ea2f8.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+
+.display-4{
+  font-weight: bold;
+}
+
+.lead{
+  font-size: 1.2em;
+   
+}
+
+.content{
+  padding-top: 5%;  
+}
+
+
+.welcome-msg
+{
+    font-size: 3em;
+    font-weight: lighter;
+    padding-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+ .button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 
+          0 6px 30px 5px rgba(0, 0, 0, .12), 
+          0 8px 10px -5px rgba(0, 0, 0, .2);
+
+  border-radius: 0em;
+  background-color:  #00b386;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-weight: 800;
+  margin-right: 50px;
+
+  }
+
+.button-1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 
+          0 6px 30px 5px rgba(0, 0, 0, .12), 
+          0 8px 10px -5px rgba(0, 0, 0, .2);
+
+  border-radius: 0em;
+  background-color:  white ;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  border-color: white;    
+  }
+
+
+.button:hover {
+  background-color:   #008060;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-1:hover {
+  background-color:    #e6e6e6;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: black;
+  border-color: white;    
+
+
+  transform: translateY(-7px);
+}
+
+.footer
+{
+  padding-top: 15%;
+  font-size: 1.2em;
+  color:  #a6a6a6;
+}
+
+ .navbar{
+  box-shadow: 0px 1px 10px #999;
+  } 
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+.suggest {
+  
+  width: 100%;
+  margin-top: 1%;
+  max-width: 100%;
+  margin: 0px;
+  text-align: center;
+  float: left;
+  font-size: 1.2em;
+}
+
+input[type=text] {
+border-width: 0px 0px 3px 0px; 
+  width: 300px;
+  height: 32px;
+  opacity: 0.8;
+  background-color: transparent; 
+  border-style: solid; 
+  border-width: 0px 0px 1px 0px; 
+  border-color:  #a6a6a6;
+}
+
+input[type=text]:focus {
+ 
+  background-color: none;
+  outline: 0;
+  font-weight: bold;
+  width: 300px;
+  height: 30px;
+}
+
+/* for checkbox */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 16px;
+}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 22px; height: 22px;
+    border: 2px solid #cccccc;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 0px; left: 5px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #09ad7e;
+    transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #999999;
+    background-color: #dddddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999999;
+}
+[type="checkbox"]:disabled + label {
+    color: #aaaaaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+    border: 2px dotted #0000ff;
+}
+/* hover style just for information */
+label:hover:before {
+    border: 2px solid #4778d9!important;
+    background: #ffffff;
+
+  }

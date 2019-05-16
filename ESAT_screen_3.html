@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ESAT_Screen_3</title>
+</head>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style-1.css"> 
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
+<body>
+ <nav class="navbar navbar-default navbar-fixed-top ">
+  <div class="container">
+      <a href="ESAT_Screen_1.html">
+      	<img src="assets/images/logo.png" width="140px">
+      </a>
+  </div>
+ </nav>
+
+<div class="container">
+  <div class="row">
+        <div class="col-md-2 col-xs-2" style = "width:50%; height:40%;  padding-top: 5%;">
+    			<h1 class="display-4">Department: Facilities</h1>
+				<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+				  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				<br><br>
+				<p class="lead"><b style="font-weight: 800;">Choose your mascot for this department
+				</b> (hover over each mascot to know it’s meaning) </p>
+    	</div>
+
+    	<div class="col-md-2 col-xs-2 " style = "width:50%; height:50%;  padding-top: 5%; float: right; padding-left: 10em;">
+    		<a href="#"><br><br><br><br><br>
+ 					<button class="button btn btn-success btn-lg" id="following" style="visibility: hidden;">
+ 					<strong>Move on to the next department</strong>
+ 					</button>
+ 					<br><br><br><br><br><br>
+ 				</a>
+ 		</div>
+
+  </div>
+
+	<div class="row" style="border: 1px solid #b5b6b7;">
+
+		<div class="col-md-2 col-xs-2 text-center" style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\pearl.png" width="100" class="img" id='oye' style="text-align:center;"  onclick="castVote('oye'); toggleTooltip(true); return false;" >
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom" 
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ">
+				<p  id="oyster" style="text-align:center;">World is my <b>Oyster</b></p>
+			</span>
+		</div>
+
+		<div class="col-md-2 col-xs-2 text-center " style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\cat.png" width="100" class="img" id='cat' style="text-align:center;" onclick="castVote('cat'); return false;" >
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom" 
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ">	
+				<p  id="cat1" style="text-align:center;">A <b>Cat’s</b> Meow</p>	
+			</span>
+		</div>
+		
+		<div class="col-md-2 col-xs-2 text-center" style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\whale.png" class="img" id='wha' width="100" style="text-align:center;" onclick="castVote('wha'); return false;"  >
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom"
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. ">
+				<p  id="whale" style="text-align:center;">A <b>Whale</b> of a time</p>
+			</span>
+		</div>	
+
+		<div class="col-md-2 col-xs-2 text-center" style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\elephant.png" class="img" id='ele' width="100" style="text-align:center;" onclick="castVote('ele'); return false;"  >
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom" 
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ">
+				<p id="elephant" style="text-align:center;"><b>Elephant</b> in the room</p>	
+			</span>
+		</div>
+
+		<div class="col-md-2 col-xs-2 text-center" style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\fish.png" width="100"  class="img" id='fis' style="text-align:center;" onclick="castVote('fis'); return false;" >
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom" 
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ">	
+				<p id="fish" style="text-align:center;">Dead <b>Fish</b></p>	
+			</span>
+		</div>
+		
+		<div class="col-md-2 col-xs-2 text-center"  style="width:15%; height: 15%" hspace="50">
+			<img src="assets\images\duck.png"   width="100" class="img" id='goo' style="text-align:center;" onclick="castVote('goo'); return false;">
+			<span class="tooltip1" data-toggle="tooltip" data-placement="bottom" 
+				title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ">
+				<p id="goose" style="text-align:center;">Wild <b>Goose</b> Chase</p>
+			</span>
+		</div>	
+	</div>
+
+		<div id="display" class="row" style="width:100%; visibility:hidden;">
+			<div class="col-md-4 col-xs-4" >
+				<div class="row">
+					<p class="lead"><b>Overall Rating facilities</b> (1 - lowest, 5-highest)</p>
+					<fieldset class="rating">
+				    	<input type="radio" id="star5" name="rating" value="5" onclick="enable_btn();" />
+				    	<label class="full" for="star5" data-toggle="tooltip" data-placement="bottom" title="Awesome - 5 stars">
+				    		<font id="rate" style="font-family; Arial; font-size: 14; font-weight: bold; color: black"></font>
+				    	</label>
+				    	
+				    	<input type="radio" id="star4" name="rating" value="4" onclick="enable_btn();"/>
+				    	<label class="full" for="star4" data-toggle="tooltip" data-placement="bottom" title="Pretty good - 4 stars">
+				    		<font id="rate" style="font-family; Arial; font-size: 14; font-weight: bold;" ></font>
+				    	</label>
+				    	
+				    	<input type="radio" id="star3" name="rating" value="3" onclick="enable_btn();"/>
+				    	<label class="full" for="star3" data-toggle="tooltip" data-placement="bottom" title="Meh - 3 stars">
+				    		<font id="rate" style="font-family; Arial; font-size: 14; font-weight: bold;" ></font>
+				    	</label>
+					    
+					    <input type="radio" id="star2" name="rating" value="2" onclick="enable_btn();"/>
+					    <label class="full" for="star2" data-toggle="tooltip" data-placement="bottom" title="Kinda bad - 2 stars">
+					    	<font id="rate" style="font-family; Arial; font-size: 14; font-weight: bold;" ></font>
+					    </label>
+					    
+					    <input type="radio" id="star1" name="rating" value="1" onclick="enable_btn();"/>
+					    <label class="full" for="star1" data-toggle="tooltip" data-placement="bottom" title="Sucks big time - 1 star">
+					    	<font id="rate"  style="font-family; Arial; font-size: 14; font-weight: bold;"></font>
+					    </label>
+						
+					</fieldset>
+					<b id="sel"style="width:500px;">
+				</div>
+				<div class="row">
+					<p class="lead"><b>Share Your Reason For Selecting </b><font id="textarea" style="color:red;"></font></p></b>
+	                <div>
+  					       <input type="checkbox" id="check1"/>
+	                        <label for="check1">
+	                            <span class="check"></span>
+	                            <span class="box"></span>
+	                            &nbsp;&nbsp;Lorem ipsum dolor sit amet
+	                        </label>
+	                 </div>
+	           		 <div>
+	                       <input id="check2" type="checkbox">
+	                        <label for="check2">
+	                            <span class="check"></span>
+	                            <span class="box"></span>
+								&nbsp;&nbsp;Lorem ipsum dolor sit amet 
+	                        </label>
+	                </div>
+	                <div>
+	                       <input id="check3" type="checkbox">
+	                        <label for="check3">
+	                            <span class="check"></span>
+	                            <span class="box"></span>
+								&nbsp;&nbsp;Lorem ipsum dolor sit amet 
+	                        </label>
+	                </div>
+	                <div>
+	                       <input id="check4" type="checkbox">
+	                        <label for="check4">
+	                            <span class="check"></span>
+	                            <span class="box"></span>
+								&nbsp;&nbsp;Lorem ipsum dolor sit amet
+	                        </label>
+	                </div>
+	            </div>
+
+            </div>
+            <div class="col-md-4 col-xs-4 ">
+				<p class="lead suggest" ><b>Any More Reasons?</b></p><br><br>
+				<div class="form-group">
+
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+					<input type="text" placeholder="Lorem ipsum dolor sit amet" style="margin-bottom: 0px">
+				</div>
+
+			</div>
+			<div class="col-xs-4 col-md-4">
+					<b><p class="lead"><b>Suggestions</b></p></b>
+					<textarea style="margin-right: 10%;" class="text_area form-control" id="exampleFormControlTextarea1" rows="9" cols="28"></textarea>
+				</div>
+			</div>
+		</div>		
+	</div>
+			
+			
+	</div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">    $('body').tooltip({ selector: '[data-toggle="tooltip"]' }); </script>
